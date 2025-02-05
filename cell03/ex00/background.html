@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell3 EX03</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+    <button id="changeColorBtn">Change Background</button>
+    <script>
+        document.getElementById("changeColorBtn").addEventListener("click", function() {
+            document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, 
+                                                      ${Math.floor(Math.random() * 256)}, 
+                                                      ${Math.floor(Math.random() * 256)})`;
+        });
+    </script>
+</body>
+</html>
