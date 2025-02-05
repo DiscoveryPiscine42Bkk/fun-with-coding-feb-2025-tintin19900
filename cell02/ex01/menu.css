@@ -1,0 +1,10 @@
+select {
+    background-color: greenyellow;
+    font-size: 6vw;
+    border-radius: 35px;
+  }
+  label {
+    font-size: 6vw;
+    color: cyan;
+    font-weight: bold;
+  }
