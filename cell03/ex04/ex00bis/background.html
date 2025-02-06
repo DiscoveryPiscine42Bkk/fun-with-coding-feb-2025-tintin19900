@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX00 Jquery</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+    <button id="changeColorBtn">Click Me!</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#changeColorBtn").click(function() {
+            const color_rand = `rgb(${Math.floor(Math.random() * 256)}, 
+                                                      ${Math.floor(Math.random() * 256)}, 
+                                                      ${Math.floor(Math.random() * 256)})`;
+            $("body").css("background-color",color_rand );
+        })});
+    </script>
+</body>
+</html>

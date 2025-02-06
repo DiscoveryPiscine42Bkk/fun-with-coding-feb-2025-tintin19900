@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX01 Jquery</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="balloon"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    let colors = ["red", "green", "blue"];
+    let colorIndex = 0;
+
+    $(document).ready(function(){
+        $('.balloon').click(click_balloon);
+        $('.balloon').mouseleave(balloon_def);
+    })
+
+    const click_balloon = () =>{
+        const $balloon = $(".balloon");
+        const current_width = parseInt($balloon.css("width"));
+        const current_height = parseInt($balloon.css("height"));
+        $balloon.css({
+            width: (current_width + 10) + 'px',
+            height: (current_height + 10) +'px'
+        });
+        colorIndex = (colorIndex + 1) % colors.length; 
+        $balloon.css('background-color',colors[colorIndex]);
+        
+        if (current_width + 10 >= 425){
+            $balloon.css({
+                width: '200px',
+                height: '200px',
+                backgroundColor: 'red'
+            });
+            colorIndex = 0;
+        }
+    }
+    
+    const balloon_def = () => {
+        const $balloon = $(".balloon");
+        const current_width = parseInt($balloon.css("width"));
+        const current_height = parseInt($balloon.css("height"));
+
+        if (current_height > 200){
+            $balloon.css({
+                width: (current_width-5) +'px',
+                height: (current_height - 5) + 'px'
+            });
+        }
+        colorIndex = (colorIndex + 1) % colors.length; 
+        $balloon.css('background-color',colors[colorIndex]);
+
+    }
+
+</script>
+
+</body>
+</html>

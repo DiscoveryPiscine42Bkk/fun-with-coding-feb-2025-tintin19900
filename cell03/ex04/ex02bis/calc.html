@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX02 Jquery</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: wheat;
+    }
+
+    input {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    select {
+        margin: 5px;
+        padding: 5px;
+        position: flex;
+        left: 130px;
+    }
+
+    button {
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <input type="text" id="firstNumber" placeholder="First Number">
+    <select id="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+        <option value="mod">%</option>
+    </select>
+    <input type="text" id="secondNumber" placeholder="Second Number">
+    <button onclick="calc()">Try me!</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+        $('#calc').click(function(){
+            calc();
+        });
+    });
+
+    function calc() {
+        var firstNumber = $('#firstNumber').val();
+        var secondNumber = $('#secondNumber').val();
+        var operator = $('#operator').val();
+        var result = 0;
+
+        if (firstNumber === "" || secondNumber === "" || isNaN(firstNumber) || isNaN(secondNumber) || firstNumber < 0 || secondNumber < 0) {
+            alert("Error :(");
+            console.log("Error :(");
+            return;
+        }
+        if ((operator == "divide" || operator == "mod") && secondNumber == 0) {
+            alert("It’s over 9000!");
+            console.log("It’s over 9000!");
+            return;
+        }
+
+        if (operator == "add") {
+            result = parseInt(firstNumber) + parseInt(secondNumber);
+        } else if (operator == "subtract") {
+            result = parseInt(firstNumber) - parseInt(secondNumber);
+        } else if (operator == "multiply") {
+            result = parseInt(firstNumber) * parseInt(secondNumber);
+        } else if (operator == "divide") {
+            result = parseInt(firstNumber) / parseInt(secondNumber);
+        } else if (operator == "mod") {
+            result = parseInt(firstNumber) % parseInt(secondNumber);
+        }
+
+        alert("Result: " + result);
+        console.log("Result: " + result);
+    }
+
+    setInterval(function () {
+        alert('Please, use me...');
+    }, 30000);
+</script>
+
+</html>
