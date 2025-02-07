@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    @media (max-width: 768px) {
+        .navbar-brand {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Mainpage.html">Mainpage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="px-4 pt-5 text-center">
+            <h1 class="display-4 fw-bold text-body-emphasis">About Me</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Hi! I'm <strong>Jiraphat Sabutr</strong> , a passionate programmer and web developer with a love for 3D graphics and
+                    AI.</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 100vh;">
+                <div class="container px-5">
+                    <img src="Ing.jpg" class="img-fluid border rounded-3 mb-4" alt="Example image" width="300"
+                        height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center border-bottom">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                        class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Birthdate</h6>
+                            <p class="mb-0 opacity-75">Febuary 6, 2005</p>
+                        </div>
+                        <!-- <small class="opacity-50 text-nowrap">now</small> -->
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                        class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Education</h6>
+                            <p class="mb-0 opacity-75">Bachelor's in Computer Engineering, KMITL University.</p>
+                        </div>
+                        <!-- <small class="opacity-50 text-nowrap">3d</small> -->
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                        class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Interesting</h6>
+                            <p class="mb-0 opacity-75">Futuristic 3D website with a 3D character Model with Interaction
+                            </p>
+                        </div>
+                        <!-- <small class="opacity-50 text-nowrap">1w</small> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="container pt-5 border-bottom">
+            <h2 class="mb-4 display-4 text-center fw-bold">My Skills</h2>
+            <div class="row mt-4 border-bottom py-md-4">
+
+                <div class="col-md-6 text-start">
+                    <h4 class="fw-bold">C</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"></div>
+                    </div>
+
+                    <h4 class="fw-bold">Blender</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"></div>
+                    </div>
+
+                    <h4 class="fw-bold">JavaScript</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                    <h4 class="fw-bold">Python</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 71%;"></div>
+                    </div>
+
+                    <h4 class="fw-bold">HTML</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+                    </div>
+
+                    <h4 class="fw-bold">English</h4>
+                    <div class="progress mb-3" style="height: 14px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-4 display-4 text-center fw-bold pt-5">My Projects</h2>
+            <div class="row featurette py-md-5 pt-5 border-bottom">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Udemy Clone Website</h2>
+                    <p class="lead">A fully responsive Udemy-like website where users can browse, enroll in courses, and
+                        interact with instructors.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og"
+                        class="img-fluid rounded-3" alt="Udemy Clone Website">
+                </div>
+            </div>
+
+            <div class="row featurette py-md-5 pt-5 border-bottom">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">3D Game Website</h2>
+                    <p class="lead">A web-based 3D game using Three.js and WebGL, featuring interactive gameplay and
+                        physics-based movement.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="gameweb.png" class="img-fluid rounded-3" alt="3D Game Website">
+                </div>
+            </div>
+
+            <div class="row featurette py-md-5 pt-5 border-bottom">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">3D Character Modeling</h2>
+                    <p class="lead">A collection of 3D character models designed using Blender, featuring realistic
+                        textures and animations.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="blender.png" class="img-fluid rounded-3" alt="3D Character Modeling">
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="px-4 pt-5 py-md-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Contact Me</h1>
+            <p class="fs-3 pt-5">Address: Samutprakarn,Thailand</p>
+            <p class="fs-3 pt-4">Phone: +012-345-6789</p>
+            <p class="fs-3 pt-4">Email: <a href="jSabutr@email.com">jSabutr@email.com</a></p>
+            <div class="row justify-content-center mt-4 pt-5">
+                <div class="col-md-6 pymd-5">
+                    <a href="https://github.com/StupidCat121" target="_blank" class="btn btn-outline-dark">
+                        <i class="bi bi-github" style="font-size: 2rem;"></i> GitHub
+                    </a>
+                    <a href="https://www.instagram.com/unagi1_/" target="_blank" class="btn btn-outline-danger">
+                        <i class="bi bi-instagram" style="font-size: 2rem;"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
